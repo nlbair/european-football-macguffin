@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The European Football MacGuffin</title>
+<meta name="description" content="A made-up title belt that has passed from club to club across the top five leagues and Europe since 1992. Beat the holder and it’s yours.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <a class="wordmark" href="#path" data-nav="path">The European Football MacGuffin</a>
+    <nav class="tabs" id="tabs" aria-label="Sections"></nav>
+  </header>
+
+  <section class="hero" id="hero" aria-live="polite"></section>
+  <section class="machine" id="machine" aria-label="Who had it on a given day"></section>
+  <main class="view" id="view" tabindex="-1"></main>
+
+  <footer class="credit">
+    <p>
+      Inspired by Tyler Budge’s College Football MacGuffin. Follow him:
+      <a href="https://www.tiktok.com/@cfbudge" target="_blank" rel="noopener">TikTok</a>,
+      <a href="https://www.instagram.com/cf_budge/" target="_blank" rel="noopener">Instagram</a>,
+      <a href="https://x.com/CFBudge" target="_blank" rel="noopener">X</a>.
+      This is an independent project and isn’t affiliated with or endorsed by him.
+    </p>
+    <p>Match data from <a href="https://fbref.com" target="_blank" rel="noopener">FBref</a>. <span id="built"></span></p>
+  </footer>
+</div>
+
+<dialog id="dlg" aria-labelledby="dlgTitle">
+  <button type="button" class="dlg-close" id="dlgClose" aria-label="Close">&times;</button>
+  <div class="dlg-inner" id="dlgBody"></div>
+</dialog>
+
+<script src="data/chain.js"></script>
+<script src="data/details.js"></script>
+<script src="data/logos.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
